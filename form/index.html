@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Форма</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/normolize.css" />
+		<link
+			rel="shortcut icon"
+			href="./img/favicon-star-image.png"
+			type="image/png"
+		/>
+	</head>
+	<body>
+		<form class="form">
+			<fieldset class="fieldset">
+				<legend class="legend-title">Ваши личные данные:</legend>
+				<label for="text" class="label">
+					Ваше имя:
+					<input
+						id="text"
+						class="input"
+						type="text"
+						placeholder="Имя"
+						name="first-name"
+						required
+					/>
+				</label>
+				<label for="number" class="label">
+					Ваш возраст:
+					<input
+						id="number"
+						class="input"
+						type="number"
+						inputmode="numeric"
+						placeholder="Возраст"
+						name="age"
+						required
+					/>
+				</label>
+				<label for="tel" class="label">
+					Ваш номер телефона:
+					<input
+						id="tel"
+						class="input"
+						type="tel"
+						inputmode="tel"
+						placeholder="Номер телефона"
+						name="number"
+						required
+					/>
+				</label>
+				<label for="email" class="label">
+					Ваша почта:
+					<input
+						id="email"
+						class="input"
+						type="email"
+						placeholder="Почта"
+						name="email"
+						required
+					/>
+				</label>
+			</fieldset>
+			<fieldset class="fieldset">
+				<label for="sms" class="label">
+					Сообщение:
+					<textarea
+						id="sms"
+						class="textarea"
+						placeholder="Сообщение"
+						name="sms"
+						required
+					></textarea>
+				</label>
+				<label class="label-inline-block">
+					<input
+						class="checkbox"
+						type="checkbox"
+						name="consent"
+						value="consent"
+						required
+					/>
+					<span class="checkbox-text">Я принимаю правила</span>
+				</label>
+				<button class="button">Отправить</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
